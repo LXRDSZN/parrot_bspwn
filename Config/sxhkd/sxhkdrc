@@ -12,7 +12,7 @@ super + shift + p
 	gnome-control-center
 #open nemo
 super + shift + n
-	nemo
+w	nemo
 # google-chrome
 super + shift + g
 	google-chrome

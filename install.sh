@@ -142,6 +142,11 @@ rofi-theme-selector
 rm -rf ~/github
 rm -rf $ruta
 
-# Mensaje de Instalado
+ 
+# Instalamos el panel de configuracion
+sudo apt install gnome-control-center
 
+# Instalamos el gestionador de archivos
+sudo apt install nemo
+# Mensaje de Instalado
 notify-send "BSPWM INSTALADO"

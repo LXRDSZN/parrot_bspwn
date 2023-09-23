@@ -20,11 +20,11 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# RESOLUCION ARANDR
+# RESOLUCION ARANDR 
 
 
 # WALLPAPER
-feh --bg-fill ~/Wallpaper/s4vitar.png
+feh --bg-fill ~/.config/fondos/images/debri.jpg
 
 # POLYBAR
 ~/.config/polybar/launch.sh
