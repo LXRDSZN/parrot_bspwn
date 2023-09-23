@@ -12,9 +12,7 @@ chmod +x install.sh
 
 "FULL UPGRADEADO"
 
-y esta pensada en correr en maquinas virtuales de VMware
 
-Buenas compañeros,
+Seria de buena ayuda a darle mayor estetica al polybar
 
-Espero les sirva este pequeño aporte
 
