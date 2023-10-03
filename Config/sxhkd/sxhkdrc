@@ -12,13 +12,13 @@ super + shift + p
 	gnome-control-center
 #open nemo
 super + shift + n
-w	nemo
+	nemo
 # google-chrome
 super + shift + g
 	google-chrome
 # terminal emulator
-super + Return
-	/opt/kitty/bin/kitty
+#super + Return
+#	/opt/kitty/bin/kitty
 
 # program launcher
 super + d

@@ -20,11 +20,12 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# RESOLUCION ARANDR 
+
+# RESOLUCION ARANDR
 
 
 # WALLPAPER
-feh --bg-fill ~/.config/fondos/images/debri.jpg
+feh --bg-fill ~/.config/fondos/images/s4vitar.png
 
 # POLYBAR
 ~/.config/polybar/launch.sh
@@ -33,7 +34,10 @@ feh --bg-fill ~/.config/fondos/images/debri.jpg
 bspc config focus_follows_pointer true
 
 # PICOM
-picom &
+#picom &
+picom --experimental-backends &
 bspc config border_width 0
 
 xsetroot -cursor_name left_ptr &
+#start service posgresql
+sudo systemctl start postgresql
