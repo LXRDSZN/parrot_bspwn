@@ -17,8 +17,8 @@ super + shift + n
 super + shift + g
 	google-chrome
 # terminal emulator
-#super + Return
-#	/opt/kitty/bin/kitty
+super + Return
+	/opt/kitty/bin/kitty
 
 # program launcher
 super + d
