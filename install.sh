@@ -122,6 +122,7 @@ chsh -s /usr/bin/zsh
 sudo usermod --shell /usr/bin/zsh root
 sudo ln -s -fv ~/.zshrc /root/.zshrc
 
+
 # Asignamos Permisos a los Scritps
 
 chmod +x ~/.config/bspwm/bspwmrc
