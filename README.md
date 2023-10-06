@@ -15,7 +15,7 @@ chmod +x install.sh
 Nota:
 Para el tema de rofi, al ejecutar el comando ./install.sh aparecera un cuadro
 ese tema es rofi, buscar el tema Nord y precionar las teclas alt + a
-para ejecutar los comandos
+para reflejar los cambios
 
 para abrir el menú precionar la tecla windows + d abrirá rofi
 que es el menu de programas
@@ -27,6 +27,7 @@ para configuarar los atajos de teclado
 *ir al directorio cd cd .config/sxhkd
 *ejecutar el siguiente comando "nano sxhkdrc"
 
+	Lista de los atajos
 
 ##########################
 # wm independent hotkeys #
@@ -211,7 +212,7 @@ solo cambiar apartir del nombre de la imagen  ejemplo:
 
 feh --bg-fill  ~/Wallpaper/"hackthebox-alt.jpg"
 
-solo cambiamos lo que esta dentrod e las comillas y lo sustituimos por el nombre del nuevo fondo
+solo cambiamos lo que esta dentro de las comillas y lo sustituimos por el nombre del nuevo fondo
 
 
 feh --bg-fill  ~/Wallpaper/nombre-del-fondo.jpg
