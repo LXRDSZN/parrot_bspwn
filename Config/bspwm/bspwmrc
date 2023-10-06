@@ -25,7 +25,7 @@ bspc rule -a Screenkey manage=off
 
 
 # WALLPAPER
-feh --bg-fill  ~/Wallpaper/s4vitar.png
+feh --bg-fill  ~/Wallpaper/hackthebox-alt.jpg
 
 # POLYBAR
 ~/.config/polybar/launch.sh
