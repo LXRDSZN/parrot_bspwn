@@ -200,7 +200,7 @@ cambio de fondo ir a la carpeta Wallpaper copiar el nombre junto a la extencion 
 s4vitar.jpg
 
 *ir a la siguiente ruta
-*cd  cd .config/bspwm
+*cd .config/bspwm
 *ejecutar el comando "nano bspwmrc"
 
 y buscar la siguente lienea 
