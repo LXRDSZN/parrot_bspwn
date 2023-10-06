@@ -17,11 +17,11 @@ Para el tema de rofi, al ejecutar el comando ./install.sh aparecera un cuadro
 ese tema es rofi, buscar el tema Nord y precionar las teclas alt + a
 para reflejar los cambios
 
-para abrir el menú precionar la tecla windows + d abrirá rofi
+para abrir el menú precionar las teclas windows + d abrirá rofi
 que es el menu de programas
 
 
-para configuarar los atajos de teclado 
+para configurar los atajos de teclado 
 
 *abrir una terminal "windows + enter"
 *ir al directorio cd cd .config/sxhkd
