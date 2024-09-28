@@ -4,7 +4,7 @@ wmname LG3D &
 vmware-user-suid-wrapper &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-
+~/.config/scripts/./deadd.sh
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width         2
@@ -25,7 +25,7 @@ bspc rule -a Screenkey manage=off
 
 
 # WALLPAPER
-feh --bg-fill  ~/Wallpaper/parrot-fly-grey.jpg
+feh --bg-fill  ~/Wallpaper/anime.jpg
 
 # POLYBAR
 ~/.config/polybar/launch.sh
@@ -39,5 +39,7 @@ picom --experimental-backends &
 bspc config border_width 0
 
 xsetroot -cursor_name left_ptr &
-#start service posgresql
-sudo systemctl start postgresql
+
+# KEYBOARD RETROILUMINACION
+~/.config/scripts/./ilumination-keyboard.sh
+

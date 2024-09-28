@@ -1,0 +1,21 @@
+#!/bin/bash
+
+rofi_command="rofi -theme ~/.config/polybar/scripts/themes/shutdown.rasi"
+
+# Options
+yes=" Sí"
+no=" No"
+
+# Variable passed to rofi
+options="$yes\n$no"
+
+chosen="$(echo -e "$options" | $rofi_command -p "¿Apagar la computadora?" -dmenu -selected-row 0)"
+case $chosen in
+    $yes)
+        systemctl poweroff
+        ;;
+    $no)
+        exit 0
+        ;;
+esac
+

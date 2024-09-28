@@ -4,27 +4,121 @@
 
 
 
-#open codium
+##########################
+#	teclas de volumen	 #
+##########################
+
+#################
+# Subir volumen #
+#################
+XF86AudioRaiseVolume
+    amixer set Master 5%+
+
+#################
+# Bajar volumen #
+#################
+XF86AudioLowerVolume
+    amixer set Master 5%-
+    
+###############################
+# Silenciar/Restaurar volumen #
+###############################
+XF86AudioMute
+    amixer set Master toggle
+
+###############################
+# 		Reproducir/Pausar	  #
+###############################
+XF86AudioPlay
+    playerctl play-pause
+
+##############################
+# 		Siguiente canción	 #
+##############################
+XF86AudioNext
+    playerctl next
+
+##############################
+# 		Canción anterior     #
+##############################
+XF86AudioPrev
+    playerctl previous
+    
+##############################
+# 	Apagar el sistema		 #
+##############################
+XF86PowerOff
+	 ~/.config/polybar/scripts/poweroff.sh
+    
+################################
+#	Configuracion del sistema  #
+################################
+
+##################################################
+# Ciclo de colores de la iluminación del teclado #
+##################################################
+
+super + ctrl +  c
+    /home/lxrdszn/.config/bin/keyboard_ilumination.sh
+
+
+#########################################
+#	Apagar la iluminanioon del teclado  #
+#########################################
+super + ctrl + a 
+	/home/lxrdszn/.config/bin/poowerkeyboard.sh
+	
+##############################    
+# open simplescreenrecorder  #
+##############################
+super + shift + r
+	simplescreenrecorder
+
+##############################
+#		open codium			 #
+##############################
 super + shift + v
 	codium
-#open genome-center-panel
+
+##############################
+# open genome-center-panel	 #
+##############################
 super + shift + p 
 	gnome-control-center
-#open nemo
+
+##############################	
+#			open nemo		 #
+##############################
 super + shift + n
 	nemo
-# google-chrome
-super + shift + g
-	google-chrome
-# terminal emulator
+
+##############################	
+# 			firefox			 #
+##############################		
+super + shift + f
+	firefox-esr
+
+##############################	
+#	terminal emulator		 #
+##############################
 super + Return
 	/opt/kitty/bin/kitty
 
-# program launcher
+##############################
+# 		program launcher     #
+##############################
 super + d
-	rofi -show run
+	  rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 
 
-# make sxhkd reload its configuration files:
+##############################
+#		Lock Screen			 #
+##############################
+super + alt + l
+	i3lock-fancy
+
+##############################################
+# make sxhkd reload its configuration files: #
+##############################################
 super + Escape
 	pkill -USR1 -x sxhkd
 
@@ -33,7 +127,7 @@ super + Escape
 #################
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + ctrl + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
