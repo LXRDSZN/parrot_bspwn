@@ -1,13 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
-ip_target=$(cat ~/.config/bin/target | awk '{print $1}')
-name_target=$(cat ~/.config/bin/target | awk '{print $2}')
+# Obtener el porcentaje de uso de la CPU
+cpu_usage=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')
 
-if [ $ip_target ] && [ $name_target ]; then
-	echo "%{F#e51d0b}什%{F#ffffff} $ip_target - $name_target"
-elif [ $(cat ~/.config/bin/target | wc -w) -eq 1 ]; then
-	echo "%{F#e51d0b}什%{F#ffffff} $ip_target"
-else
-	echo "%{F#e51d0b}ﲅ %{u-}%{F#ffffff} No target"
-fi
+# Obtener el porcentaje de uso de la RAM
+memory_usage=$(free | awk '/Mem:/ {printf("%.2f%%", $3/$2 * 100)}')
+
+# Obtener el porcentaje de uso del almacenamiento
+disk_usage=$(df -h / | awk '/\// {print $5}')
+
+# Mostrar resultados
+echo "CPU: $cpu_usage | RAM: $memory_usage | SSD: $disk_usage"
 
